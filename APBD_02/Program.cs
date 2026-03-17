@@ -4,23 +4,24 @@
     {
         public static void Main(string[] args)
         {
-            List<int> list = new List<int>() {1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 0, 0, 0, 0, 0, 0, 0};
+            int[] list = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 0, 0, 0, 0, 0, 0, 0};
             print(list);
-            Console.WriteLine(CountAvg(list));
+            Console.WriteLine(CalculateAverage(list));
         }
 
-        public static double CountAvg(List<int> values)
+        public static double CalculateAverage(int[] values)
         {
             int sum = 0;
-            for (int i = 0; i < values.Count; ++i)
+            int count = 0;
+            foreach (var entry in values)
             {
-                sum += values[i];
+                sum += entry;
+                ++count;
             }
-            return sum/values.Count;
-            // return values.Sum()/values.Count;
+            return sum/count;
         }
 
-        public static void print(List<int> list)
+        public static void print(int[] list)
         {
             foreach (var entry in list)
             {
@@ -30,3 +31,5 @@
         }
     }
 }
+
+
