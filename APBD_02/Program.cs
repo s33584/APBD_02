@@ -8,6 +8,7 @@
             print(list);
             Console.WriteLine(CalculateAverage(list));
             Console.WriteLine(CalculateMax(list));
+            Console.WriteLine(CalculateMin(list));
         }
 
         public static double CalculateAverage(int[] values)
