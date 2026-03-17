@@ -25,15 +25,15 @@
 
         public static double CalculateMax(int[] values)
         {
-            int main_max = 0;
+            int resolved_max = 0;
             foreach (var entry in values)
             {
-                if (entry > main_max)
+                if (entry > resolved_max)
                 {
-                    main_max = entry;
+                    resolved_max = entry;
                 }
             }
-            return main_max;
+            return resolved_max;
         }
 
         public static double CalculateMin(int[] values)
