@@ -6,9 +6,9 @@
         {
             int[] list = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 0, 0, 0, 0, 0, 0, 0};
             print(list);
-            Console.WriteLine(CalculateAverage(list));
-            Console.WriteLine(CalculateMax(list));
-            Console.WriteLine(CalculateMin(list));
+            Console.WriteLine($"Average: {CalculateAverage(list)}");
+            Console.WriteLine($"Max: {CalculateMax(list)}");
+            Console.WriteLine($"Min: {CalculateMin(list)}");
         }
 
         public static double CalculateAverage(int[] values)
