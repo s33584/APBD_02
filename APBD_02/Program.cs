@@ -7,6 +7,7 @@
             int[] list = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 0, 0, 0, 0, 0, 0, 0};
             print(list);
             Console.WriteLine(CalculateAverage(list));
+            Console.WriteLine(CalculateMax(list));
         }
 
         public static double CalculateAverage(int[] values)
@@ -19,6 +20,19 @@
                 ++count;
             }
             return sum/count;
+        }
+
+        public static double CalculateMax(int[] values)
+        {
+            int max = 0;
+            foreach (var entry in values)
+            {
+                if (entry > max)
+                {
+                    max = entry;
+                }
+            }
+            return max;
         }
 
         public static void print(int[] list)
