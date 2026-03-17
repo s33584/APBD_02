@@ -35,6 +35,19 @@
             return max;
         }
 
+        public static double CalculateMin(int[] values)
+        {
+            int min = values[0];
+            foreach (var entry in values)
+            {
+                if (entry < min)
+                {
+                    min = entry;
+                }
+            }
+            return min;
+        }
+
         public static void print(int[] list)
         {
             foreach (var entry in list)
